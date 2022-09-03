@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   get 'contato', to: 'static_pages#contato'
   
   resources :contacts
-  resources :users, only: [:new, :create]
+  resources :users, only: [:new, :create, :show]
 
 end
